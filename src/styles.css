@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed");
+
+.app {
+  font-family: "Roboto Condensed", sans-serif;
+}
+html {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #111827;
+  margin: 0;
+}
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+button {
+  transition: 0.2s ease-in-out 0s;
+}
+button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/*Navigation*/
+.navbar-collapse,
+.show {
+  position: absolute;
+  top: 63px;
+  right: 0px;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+}
+.navbar {
+  background-color: white;
+}
+.navbar-brand {
+  color: #111827 !important;
+  transition: 0.2s ease-in-out 0s;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.navbar-brand:hover {
+  color: #239a3b !important;
+  transform: scale(1.2);
+}
+.container {
+  max-width: none !important;
+  padding: 0 20px;
+  margin-top: none;
+  font-size: 1.3em;
+}
+#responsive-navbar-nav {
+  justify-content: flex-end;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(17, 24, 39, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+.navbar-toggler {
+  border: none;
+}
+.nav-links {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+.nav-link {
+  color: #111827 !important;
+  transition: 0.2s ease-in-out 0s;
+  text-align: left;
+  margin-right: 10px;
+}
+.nav-link:hover {
+  color: #239a3b !important;
+  transform: scale(1.2);
+}
+.nav-socials {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.icon {
+  color: #111827;
+  font-size: 1.5em;
+  transition: 0.1s ease-in-out 0s;
+  margin-right: 15px;
+  transition: 0.2s ease-in-out 0s;
+}
+.icon:hover {
+  color: #239a3b !important;
+  transform: scale(1.2);
+}
+
+/* Hero Section  */
+#hero {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+#hero-left {
+  width: 90%;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.hero-highlight {
+  color: #239a3b;
+}
+#hero-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.button-icon {
+  padding-right: 10px;
+}
+.hero-button-portfolio {
+  background-color: #239a3b;
+  color: white;
+  border: 1px solid #239a3b;
+  border-radius: 20px;
+  font-size: 1.2em;
+  padding: 10px 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+  transition: 0.2s ease-in-out 0s;
+}
+.hero-button-portfolio:hover {
+  transform: scale(1.2);
+  color: white;
+}
+.hero-button-contact {
+  background-color: white;
+  color: #374151;
+  border: 1px solid white;
+  border-radius: 20px;
+  font-size: 1.2em;
+  padding: 10px 30px;
+  margin-top: 10px;
+  transition: 0.2s ease-in-out 0s;
+}
+.hero-button-contact:hover {
+  transform: scale(1.2);
+  color: #374151;
+}
+#hero-right {
+  width: 100%;
+}
+#hero-right img {
+  width: 100%;
+}
+
+/*About Section */
+#about {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.section-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: #239a3b;
+}
+#about-details {
+  display: flex;
+  flex-flow: column-reverse wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#about-left {
+  width: 90%;
+  padding-left: 10px;
+  color: white;
+  text-align: center;
+}
+#about-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+#about-right-img {
+  width: 100%;
+}
+
+/*Skills Section*/
+#skills {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.skill-item {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 30%;
+  text-align: center;
+  margin: 10px 0px;
+}
+.skill-icon {
+  text-align: center;
+  font-size: 2em;
+}
+
+/*Portfolio Section*/
+#portfolio {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.card {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #3f4a5c;
+  margin: 20px 10px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px black;
+  transition: 0.2s ease-in-out 0s;
+}
+.card:hover {
+  transform: scale(1.11);
+}
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.card-body {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  padding: 10px 5px;
+  color: white;
+}
+.card-title {
+  color: #239a3b;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.card-text {
+  text-align: center;
+}
+.card-icons {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+}
+.card-icon {
+  color: white;
+  font-size: 1.5em;
+}
+.card-button {
+  color: white;
+  background-color: #239a3b;
+  border: 1px solid #239a3b;
+  border-radius: 15px;
+  font-size: 1.2em;
+  transition: 0.2s ease-in-out 0s;
+}
+.card-button:hover {
+  transform: scale(1.2);
+  background-color: #239a3b !important;
+  border-color: #239a3b;
+}
+
+/*Contact*/
+#contact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+#form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: space-around;
+  width: 80%;
+}
+input {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.2em;
+  height: 40px;
+}
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.2em;
+}
+.contact-button {
+  background-color: #239a3b;
+  color: white;
+  width: 100%;
+  border: 1px solid #239a3b;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 5px 0;
+  font-size: 1.2em;
+  width: 50%;
+}
+#footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  background-color: white;
+}
+#footer a {
+  font-size: 1.8em;
+}
+
+/*Tablet*/
+@media all and (min-width: 750px) {
+  #hero-left h1 {
+    font-size: 3em;
+  }
+  #about-right {
+    width: 60%;
+  }
+  #about-left p {
+    font-size: 1.5em;
+  }
+  .skill-item {
+    font-size: 1em;
+  }
+  .skill-icon {
+    font-size: 2.5em;
+  }
+  .card {
+    width: 40%;
+  }
+}
+/*Desktop*/
+@media all and (min-width: 992px) {
+  .section-tite h1 {
+    font-size: 3em;
+  }
+  .navbar-collapse,
+  .show {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    padding-left: 0px;
+  }
+
+  #hero {
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  #hero-left {
+    width: 46%;
+    text-align: left;
+    padding-left: 15px;
+  }
+  #hero-left h1 {
+    font-size: 3.3em;
+    margin-left: 40px;
+    margin-top: 30px;
+  }
+  #hero-buttons {
+    justify-content: left;
+    margin-top: 50px !important;
+  }
+  .hero-button-portfolio {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  #hero-right {
+    width: 50%;
+  }
+  #hero-right img {
+    border-radius: 200px 0 0 200px;
+  }
+  #about {
+    margin-top: 20px;
+  }
+  #about-details {
+    flex-flow: row wrap;
+  }
+  #about-left {
+    width: 58%;
+    text-align: left;
+    font-size: 1.1em;
+  }
+  #about-right {
+    width: 40%;
+  }
+
+  .skill-item {
+    width: 25%;
+    font-size: 1.2em;
+  }
+  .skill-icon {
+    font-size: 3em;
+  }
+  .card {
+    width: 27% !important;
+  }
+  #form {
+    width: 60%;
+  }
+}
